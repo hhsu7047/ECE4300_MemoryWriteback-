@@ -58,7 +58,7 @@ module memory_tb();
         ex_mem_write_reg  = 5'd0;
 
         // reset
-        #1;
+        #5;
         rst = 0;
 
         // --------------------------------------------------
@@ -128,10 +128,11 @@ module memory_tb();
         ex_mem_read_data2 = 32'd0;
         ex_mem_write_reg  = 5'd0;
 
-        #10;
+        #20;
 
         $finish;
     end
 
 
 endmodule
+
